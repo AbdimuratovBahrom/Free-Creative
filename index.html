@@ -37,12 +37,15 @@
             Разработаем в срок от 10-ти дней
           </p>
           <div class="bg_sl-btns">
-            <div class="bg_sl-button">
+            <div class="bg_sl-buttons">
               <a href="#!">Портфолио</a>
+
+              <div class="bg_sl-button">
+
+                <button class="btn__sub" id="open-modal-btn">Оставить заявку</button>
+              </div>
             </div>
-            <div class="bg_sl-button">
-              <a href="#!">Оставить заявку</a>
-            </div>
+
           </div>
         </div>
       </div>
@@ -69,6 +72,47 @@
       <div class="style_block">
 
         <div class="style_box">
+
+
+
+          <div class="modal" id="my-modal">
+            <div class="modal__cross-btn">
+              <button class="my-close-btn" id="close-my-modal-btn">
+                <img src="./css/images/cross__btn.png" alt="X">
+              </button>
+
+              <div class="modal__box">
+
+                <div class="f_form">
+                  <div class="form__text">
+                    <h3>
+                      Оставить заявку
+                    </h3>
+
+                  </div>
+                  <form action="">
+                    <input type="text" id="Your Name" name="Your Name" placeholder="Ваше имя" required>
+                    <input type="tel" id="phone" name="telphone" placeholder="+7 (999) 999-99-99" pattern=""
+                      maxlength="12" title="14 digits code" required />
+
+                  </form>
+
+                  <div class="prolicy2">
+                    <input type="checkbox">
+                    <p>Я принимаю </p><a target="_blank" href="./polity.html">условия передачи персональных данных </a>
+                  </div>
+                  <a class="form_btn-modal" href="./polity.html">Оставить заявку</a>
+
+                </div>
+
+
+              </div>
+
+
+
+            </div>
+
+          </div>
 
 
 
@@ -212,7 +256,7 @@
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">2 / 6</div>
+            <div class="numbertext">2 / 7</div>
             <img src="./css/images/AQ.Life.png" style="width:100%">
             <div class="slider1__text">
               <div class="slider1__text-hp">
@@ -248,8 +292,8 @@
             <img src="./css/images/Coral Black.png" style="width:100%">
             <div class="slider1__text">
               <div class="slider1__text-hp">
-                <h3>Coral Black</h3>
-                <p>Черная икра в современной инторпритации</p>
+                <h3>CoralBlack</h3>
+                <p>Инновационная клиника внутривенной медицины</p>
               </div>
               <div class="slider1__button">
                 <a href="#!">Смотреть проект</a>
@@ -293,7 +337,7 @@
             <img src="./css/images/bg4.png" style="width:100%">
             <div class="slider1__text">
               <div class="slider1__text-hp">
-                <h3>Coral Black</h3>
+                <h3>CoralBlack</h3>
                 <p>Черная икра в современной инторпритации</p>
               </div>
               <div class="slider1__button">
@@ -359,7 +403,7 @@
               </p>
             </div>
             <p>Гайдлайн – это свод правил по воспроизведению фирменного стиля на носителях. Если коротко, то в гайдлайне
-              описано, как должен выглядеть каждый элемент корпоративного стиля  и какие правила его использования.
+              описано, как должен выглядеть каждый элемент корпоративного стиля и какие правила его использования.
               Гайдлайн помогает вашему бизнесу экономить время и деньги, помогать масштабироваться, а также тиражировать
               ваш бизнес посредством франшизы.
             </p>
@@ -369,15 +413,320 @@
 
     </div>
   </section>
+  <section class="form">
+    <div class="container">
+      <div class="form__block">
+        <div class="form__text">
+          <h3>
+            Оставьте заявку на разработку вашего продукта
+          </h3>
+          <p>
+            Наши эксперты свяжутся с вами в ближайшее время
+          </p>
+        </div>
+        <div class="s_form">
+          <form action="">
+            <input type="text" id="Your Name" name="Your Name" placeholder="Ваше имя" required>
+            <input type="tel" id="phone" name="telphone" placeholder="+7 (999) 999-99-99" pattern="" maxlength="12"
+              title="14 digits code" required />
+
+            <button class="form_btn">Оставить заявку</button>
+
+          </form>
+        </div>
 
 
+        <div class="prolicy">
+
+          <input type="checkbox">
+          <p>Я принимаю </p><a target="_blank" href="./polity.html">условия передачи персональных данных </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gideline">
+    <div class="container">
+      <div class="gideline__block">
+        <div class="gideline__title">
+          <h2>
+            Этапы создания фирменного стиля и гайдлайна
+          </h2>
+        </div>
+        <div class="gideline__textboxs">
 
 
+          <div class="gide__text-row">
 
+            <div class="gide__icon-l">
+
+              <img src="./css/images/lamp.svg" alt="">
+              <h4>
+                Погружение в креативный поиск
+              </h4>
+
+            </div>
+
+
+            <div class="gide__text">
+              <h6>
+                Иследование среды
+              </h6>
+              <p>Изучаем нишу и конкурентное поле, находим подходящую идею будущей коммуникации</p>
+            </div>
+
+            <div class="gide__text">
+              <h6>
+                Поиск тональности
+              </h6>
+              <p>Решаем, какая тональность подходит именно вашему бренду. Дерзкий характер или спокойный, строгий или
+                ультрамодный/p>
+            </div>
+
+            <div class="gide__text">
+              <h6>
+                Формирование мудбордов
+              </h6>
+              <p>Составляем подборку креативных проектов, которые соответствуют
+                поставленной тональности стиля</p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="gideline__textboxs">
+
+
+          <div class="gide__text-row">
+
+            <div class="gide__icon-l">
+
+              <img src="./css/images/letter.svg" alt="">
+              <h4>
+                Разработка визуальной и вербальной айдентики
+              </h4>
+
+            </div>
+
+
+            <div class="gide__text">
+              <h6>
+                Название и слоганы
+              </h6>
+              <p>Придумываем название для вашего бренда и запоминающиеся слоганы</p>
+            </div>
+
+            <div class="gide__text">
+              <h6>
+                Разработка логотипа, цвет
+              </h6>
+              <p>Создаем логотип – основной графический символ, важнейший элемент коммуникации, подбираем цветовую
+                палитру для всей коммуникации</p>
+            </div>
+
+            <div class="gide__text">
+              <h6>
+                Основные носители
+                фирменного стиля
+              </h6>
+              <p>Создаем дополнительные элементы дизайна: иллюстрации, фото, типографика. Прорабатываем дизайн на всех
+                носителях. </p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="gideline__textboxs">
+
+
+          <div class="gide__text-row">
+
+            <div class="gide__icon-l">
+
+              <img src="./css/images/book.svg" alt="">
+              <h4>
+                Создание гайдлайна
+              </h4>
+
+            </div>
+
+
+            <div class="gide__text">
+              <h6>
+                Основные принципы стиляы
+              </h6>
+              <p>Изучаем нишу и конкурентное поле, находим подходящую идею будущей коммуникации</p>
+            </div>
+
+            <div class="gide__text">
+              <h6>
+                Составлениегайдлайна
+              </h6>
+              <p>Изучаем нишу и конкурентное поле, находим подходящую идею будущей коммуникации</p>
+            </div>
+
+            <div class="gide__text">
+              <h6>
+                Вы получаете готовый бренд с набором всех необходимых инструментов
+              </h6>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer__form">
+    <div class="footer__form-block">
+
+    </div>
+  </section>
+
+
+  <section class="stl__bg">
+    <div class="container">
+      <div class="stl__text2">
+        <h2>
+          Гарантия качества: <br> 5 фундаментальных преимуществ
+          работать с нами
+        </h2>
+
+        <div class="stl__num2">
+          <div class="stl__num-h2">
+            <h2>1</h2>
+            <p>
+              Разработкой вашего фирменного стиля займется команда профессионалов с высшим профильным образованием.
+            </p>
+          </div>
+          <div class="stl__num-h2">
+            <h2>2</h2>
+            <p>
+              Все права на результат работ переходят от Исполнителя к Заказчику и это закреплено юридически в нашем с
+              вами Договоре.
+            </p>
+          </div>
+          <div class="stl__num-h2">
+            <h2>3</h2>
+            <p>
+              Все сотрудники компании строго соблюдают правила коммерческой тайны по вашему проекту, мы никогда не
+              разглашаем стоимость разработки вашего проекта и любые детали, связанные с проектом.
+
+            </p>
+          </div>
+          <div class="stl__num-h2">
+            <h2>4</h2>
+            <p>
+              Мы гарантируем, что любая разработка проходит проверку на оригинальность, вы получайте действительно
+              уникальный продукт
+            </p>
+          </div>
+          <div class="stl__num-h2">
+            <h2>5</h2>
+            <p>
+              Мы имеем опыт работы с малым, средним и крупным бизнесом, а также с международными корпорациями Наша
+              репутация - это 9-ть лет успешной работы. 8-мь из 10-ти клиентов после совместной разработки фирменного
+              стиля обращаются к нам повторно: за созданием сайта, контента для социальных сетей или по любой другой
+              задаче.
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer__form">
+    <div class="container">
+      <div class="form__box">
+
+        <div class="f_form">
+          <div class="form__text">
+            <h3>
+              Связаться с нами
+            </h3>
+
+          </div>
+          <form action="">
+            <input type="text" id="Your Name" name="Your Name" placeholder="Ваше имя" required>
+            <input type="tel" id="phone" name="telphone" placeholder="+7 (999) 999-99-99" pattern="" maxlength="12"
+              title="14 digits code" required />
+
+          </form>
+
+          <div class="prolicy2">
+            <input type="checkbox">
+            <p>Я принимаю </p><a target="_blank" href="./polity.html">условия передачи персональных данных </a>
+          </div>
+          <button class="form_btn">Оставить заявку</button>
+        </div>
+        <div class="f-form__contact">
+          <h3>
+            Контакты
+          </h3>
+          <p>8 (495) 156-39-11</p>
+          <a href="mailto:brand@free-creative.com">brand@free-creative.com</a>
+          <p>Москва, Садовническая улица 69</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footrer class="footer">
+    <div class="container">
+      <div class="footer__main">
+
+
+        <h3>Мы в СМИ</h3>
+        <div class="footer__row">
+
+          <div class="footer__box">
+            <p>
+              История агентства FREE.creative
+            </p>
+
+            <a href="#!">vc.ru</a>
+          </div>
+          <div class="footer__box">
+            <p>
+              Традиции и современность: брендинг ресторана-пекарни «Ешь Хлеб»
+            </p>
+
+            <a href="#!">vc.ru</a>
+          </div>
+          <div class="footer__box">
+            <p>
+              Четыре боли крупных клиентов и целительная сила аккаунтинга
+            </p>
+
+            <a href="#!">vc.ru</a>
+          </div>
+          <div class="footer__box">
+            <p>
+              Как выводить на рынок бренды будущего: кейс инновационной клиники витаминных коктейлей
+            </p>
+
+            <a href="#!">vc.ru</a>
+          </div>
+
+
+        </div>
+        <div class="footer__copyright">
+          <p>@ FREE.creative 2008—2020</p>
+        </div>
+      </div>
+
+
+    </div>
+  </footrer>
 
 
   <script src="./js/bgslider.js"></script>
   <script defer src="./js/slider1.js"></script>
+  <script src="./js/modal.js"></script>
+
 
 </body>
 

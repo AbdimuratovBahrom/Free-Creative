@@ -1,0 +1,66 @@
+@font-face {
+  font-family: '20 Kopeek';
+  src: url('FileName.eot');
+  src: url('FileName.eot?#iefix') format('embedded-opentype'),
+    url('FileName.woff') format('woff'),
+    url('./fonts/20\ Kopeek\ Regular.otf') format('truetype'),
+    url('FileName.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: '20 Kopeek Book';
+  src: url('FileName.eot');
+  src: url('FileName.eot?#iefix') format('embedded-opentype'),
+    url('FileName.woff') format('woff'),
+    url('./fonts/20-kopeek-book.otf') format('truetype'),
+    url('FileName.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "20 Kopeek", sans-serif;
+  --second-family: "20 Kopeek Book", sans-serif;
+}
+
+:root {
+  --black: #181818;
+  --blue: #2b59c3;
+  --light-grey: #e5e5e5;
+  --dark-grey: #868686;
+  --white: #fff;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width: 730px;
+  padding: 60px 0;
+}
+
+.polity__block h2 {
+  font-family: "20 Kopeek Book", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 110%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--black);
+  text-align: start;
+}
+
+.polity__block p {
+  font-family: "20 Kopeek", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--black);
+  text-align: start;
+}

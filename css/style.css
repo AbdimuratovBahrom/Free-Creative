@@ -695,8 +695,6 @@ img {
   top: 2px;
 }
 
-
-
 .modal__cross-btn {
   display: flex;
   flex-direction: column;
@@ -712,9 +710,7 @@ img {
   position: relative;
   top: 27px;
   left: 30px;
-
 }
-
 
 .modal {
   position: fixed;
@@ -731,6 +727,55 @@ img {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.5s, visibility 0.5s;
+}
+
+.model_form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.m_form form input {
+  border: 1px solid rgb(24, 24, 24);
+  border-radius: 10px;
+  padding: 23px 29px;
+  color: rgb(134, 134, 134);
+  font-family: '20 Kopeek';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+
+.m_form button {
+
+  border-radius: 40px;
+  padding: 23px 47px;
+  background: #2b59c3;
+  color: rgb(255, 255, 255);
+  font-family: '20 Kopeek';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  top: 30px;
+}
+
+.m_form button:hover {
+  transition: all ease-in 0.4s;
+  opacity: 0.7;
+}
+
+.m_form button:active {
+  position: relative;
+  top: 3px;
 }
 
 .modal__box {
@@ -773,16 +818,6 @@ img {
   color: rgb(239, 137, 13);
   transition: all ease-in 0.4s;
 }
-
-
-
-
-
-
-
-
-
-
 
 .form__block {
   flex-direction: column;
@@ -837,33 +872,6 @@ img {
 }
 
 
-.form_btn-modal {
-
-  border-radius: 40px;
-  padding: 23px 47px;
-  background: #2b59c3;
-  color: rgb(255, 255, 255);
-  font-family: '20 Kopeek';
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0%;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: none;
-  position: relative;
-  top: 30px;
-}
-
-.form_btn-modal:hover {
-  transition: all ease-in 0.4s;
-  opacity: 0.7;
-}
-
-.form_btn-modal:active {
-  position: relative;
-  top: 3px;
-}
 
 
 
@@ -1083,14 +1091,14 @@ img {
 
 }
 
-.form__box {
+/* .form__box {
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 60px;
   flex-wrap: wrap;
   padding: 80px 0;
-}
+} */
 
 .form__text h3 {
   /* Desk — H2 */
@@ -1105,16 +1113,22 @@ img {
 }
 
 
-.f_form form {
+.ff_form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer_form {
   display: flex;
   flex-direction: column;
   align-items: start;
-
-  gap: 30px;
-
+  gap: 15px;
 }
 
-.f_form form input {
+.footer_form input {
 
   border: 1px solid rgb(24, 24, 24);
   border-radius: 10px;
@@ -1129,7 +1143,7 @@ img {
   width: 420px;
 }
 
-.f_form form button {
+.ff_form form button {
   border-radius: 40px;
   border: none;
   padding: 23px 47px;
@@ -1142,20 +1156,19 @@ img {
   letter-spacing: 0%;
   text-align: left;
   cursor: pointer;
+  margin-top: 40px;
 }
 
-.f_form form button:hover {
+.ff_form form button:hover {
   transition: all ease-in 0.4s;
   opacity: 0.7;
 
 }
 
-.f_form form button:hover {
+.ff_form form button:hover {
   transition: all ease-in 0.4s;
   opacity: 0.7;
 }
-
-
 
 .prolicy2 {
   display: flex;
@@ -1210,12 +1223,22 @@ img {
   color: var(--black);
 }
 
+.f-form__contact a span {
+  text-decoration: none;
+  font-family: var(--second-family);
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 110%;
+  color: var(--blue);
+}
+
+
 
 .footer__main {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 15px;
+  padding: 100px 0 15px 0;
 }
 
 .footer__main h3 {

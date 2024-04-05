@@ -18,7 +18,7 @@
       <div class="bg_slider-text">
         <div class="nav_row">
           <div class="nav_logo">
-            <a href="#!"><img src="./css/images/logo.png" alt=""></a>
+            <a href="#ff_form"><img src="./css/images/logo.png" alt=""></a>
             <p>Разрабатываем фирменные <br> стили с 2009 года</p>
           </div>
           <div class="nav_contacts">
@@ -83,25 +83,37 @@
 
               <div class="modal__box">
 
-                <div class="f_form">
-                  <div class="form__text">
-                    <h3>
-                      Оставить заявку
-                    </h3>
+                <div class="m_form">
 
-                  </div>
-                  <form action="">
-                    <input type="text" id="Your Name" name="Your Name" placeholder="Ваше имя" required>
-                    <input type="tel" id="phone" name="telphone" placeholder="+7 (999) 999-99-99" pattern=""
-                      maxlength="12" title="14 digits code" required />
+
+                  <form id="feedbackForm">
+                    <div class="form__text">
+                      <h3>
+                        Оставить заявку
+                      </h3>
+
+                    </div>
+                    <div class="model_form">
+                      <input type="text" id="name" name="name" placeholder="Ваше имя" required
+                        oninvalid="this.setCustomValidity('Введите своё имя')" oninput="setCustomValidity('')">
+
+                      <input type="tel" id="telphone" name="telphone" placeholder="+7 (999) 999-99-99" required
+                        oninvalid="this.setCustomValidity('Введите свой номер телефона')"
+                        oninput="setCustomValidity('')">
+                    </div>
+
+
+                    <div class="prolicy2">
+                      <input type="checkbox" id="checkbox" name="checkbox" required
+                        oninvalid="this.setCustomValidity('Согласитесь с условием')" oninput="setCustomValidity('')">
+                      <p>Я принимаю <a href="./polity.html">условия передачи персональных данных </a> </p>
+
+                    </div>
+
+                    <button type="submit">Оставить заявку</button>
 
                   </form>
 
-                  <div class="prolicy2">
-                    <input type="checkbox">
-                    <p>Я принимаю </p><a target="_blank" href="./polity.html">условия передачи персональных данных </a>
-                  </div>
-                  <a class="form_btn-modal" href="./polity.html">Оставить заявку</a>
 
                 </div>
 
@@ -425,6 +437,8 @@
           </p>
         </div>
         <div class="s_form">
+
+
           <form action="">
             <input type="text" id="Your Name" name="Your Name" placeholder="Ваше имя" required>
             <input type="tel" id="phone" name="telphone" placeholder="+7 (999) 999-99-99" pattern="" maxlength="12"
@@ -439,7 +453,7 @@
         <div class="prolicy">
 
           <input type="checkbox">
-          <p>Я принимаю </p><a target="_blank" href="./polity.html">условия передачи персональных данных </a>
+          <p>Я принимаю </p><a href="./polity.html">условия передачи персональных данных </a>
         </div>
       </div>
     </div>
@@ -640,38 +654,54 @@
 
   <section class="footer__form">
     <div class="container">
-      <div class="form__box">
 
-        <div class="f_form">
+
+      <div id="ff_form" class="ff_form">
+
+        <form id="feedbackForm3">
+
           <div class="form__text">
             <h3>
               Связаться с нами
             </h3>
 
           </div>
-          <form action="">
-            <input type="text" id="Your Name" name="Your Name" placeholder="Ваше имя" required>
-            <input type="tel" id="phone" name="telphone" placeholder="+7 (999) 999-99-99" pattern="" maxlength="12"
-              title="14 digits code" required />
+          <div class="footer_form">
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required
+              oninvalid="this.setCustomValidity('Введите своё имя')" oninput="setCustomValidity('')">
 
-          </form>
+            <input type="tel" id="telphone" name="telphone" placeholder="+7 (999) 999-99-99" required
+              oninvalid="this.setCustomValidity('Введите свой номер телефона')" oninput="setCustomValidity('')">
+          </div>
 
           <div class="prolicy2">
-            <input type="checkbox">
-            <p>Я принимаю </p><a target="_blank" href="./polity.html">условия передачи персональных данных </a>
+            <input type="checkbox" required oninvalid="this.setCustomValidity('Согласитесь с условием')"
+              oninput="setCustomValidity('')">
+            <p>Я принимаю </p><a href="./polity3.html">условия передачи персональных данных </a>
           </div>
           <button class="form_btn">Оставить заявку</button>
-        </div>
+
+        </form>
+
         <div class="f-form__contact">
           <h3>
             Контакты
           </h3>
           <p>8 (495) 156-39-11</p>
           <a href="mailto:brand@free-creative.com">brand@free-creative.com</a>
+
           <p>Москва, Садовническая улица 69</p>
+
+          <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af1ea4dd21079a6762ac2a2d64338563425ec644906abf6119ef82d5bdf644a2b&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          <a target="_blank"
+            href="https://yandex.ru/maps/?from=mapframe&ll=37.643204%2C55.737675&source=mapframe&um=constructor%3Af1ea4dd21079a6762ac2a2d64338563425ec644906abf6119ef82d5bdf644a2b&utm_source=mapframe&z=12"><span>Открыть
+              в Яндех Картах</span></a>
+
         </div>
 
       </div>
+
     </div>
   </section>
   <footrer class="footer">
@@ -726,6 +756,7 @@
   <script src="./js/bgslider.js"></script>
   <script defer src="./js/slider1.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/sent.js"></script>
 
 
 </body>

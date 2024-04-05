@@ -45,7 +45,7 @@
   padding: 60px 0;
 }
 
-.polity__block h2 {
+.polity__block a {
   font-family: "20 Kopeek Book", sans-serif;
   font-weight: 400;
   font-size: 38px;
@@ -63,4 +63,18 @@
   line-height: 140%;
   color: var(--black);
   text-align: start;
+}
+
+.polity__download {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.polity__download a {
+  font-family: "20 Kopeek", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration: none;
 }

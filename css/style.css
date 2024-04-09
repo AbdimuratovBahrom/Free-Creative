@@ -38,6 +38,10 @@
   --white: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -85,13 +89,15 @@
 
 }
 
+
+
 .nav_row {
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 300px;
-  padding: 1vw 5px 5px 5px;
+  padding: 0.8vw 15px 5px 15px;
+
 
 }
 
@@ -103,7 +109,84 @@
 }
 
 .nav_logo img {
+  width: 7vw;
+}
+
+.burger__colunm {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 200px;
+
+}
+
+.burger__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 80px;
+}
+
+.burger__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.burger__list a {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 140%;
+  color: var(--black);
+  text-decoration: none;
+  list-style: none;
+}
+
+.burger__list a:hover {
+  color: #140eb7;
+}
+
+
+.burger__social {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+.burger__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  gap: 26px;
+}
+
+.burger__tel-mail a {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.burger__tel-mail a:hover {
+  color: #140eb7;
+}
+
+.burger__menu {
+
+
+  display: none;
+  padding: 20px 40px;
   width: 100%;
+
+  background: #e5e5e5;
+
 }
 
 .nav_logo p {
@@ -118,12 +201,78 @@
 
 }
 
+.burger__btn {
+  position: relative;
+  top: 10px;
+  border-radius: 50%;
+  background: transparent;
+  padding: 3px;
+  border: solid 2px #868686;
+}
+
+.burger__btn:hover {
+  transition: all ease-in 0.4s;
+  background: var(--white);
+}
+
+
+
+
+.burger__btn1 {
+
+
+  position: relative;
+  top: 16px;
+  right: 600px;
+  border-radius: 50%;
+  background: transparent;
+  padding: 3px;
+}
+
+.burger__btn1:hover {
+  transition: all ease-in 0.4s;
+  background: var(--white);
+}
+
+
+
+.modal__cross-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+
+.modal__cross-btn button {
+  color: #181818;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 27px;
+  left: 30px;
+}
+
+
+.burger__box {
+  position: relative;
+  max-width: 648px;
+  max-height: 495px;
+  height: 50vw;
+  padding: 25px;
+  z-index: 100;
+  background-color: rgb(237, 239, 234);
+  margin: 30px 15px;
+  transform: scale(0);
+  transition: 0.7s;
+
+}
+
 .nav_contacts {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 23px;
-
 
 }
 
@@ -194,7 +343,7 @@
   letter-spacing: 0%;
   text-align: left;
   max-width: 50%;
-  margin-bottom: -20px;
+
 }
 
 .bg_h1-pbtn p {
@@ -229,7 +378,7 @@
   letter-spacing: 0%;
   text-align: left;
   text-decoration: none;
-  padding: 1.5vw 2.5vw;
+  padding: 1.2vw 2.5vw;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 40px;
   background: rgb(255, 255, 255);
@@ -247,12 +396,40 @@
   top: 2px;
 }
 
+.burger__page {
+  display: none;
+  background-image: url(./images/bg__burger.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 496px;
+}
+
+@media only screen and (max-width: 786px) {
+  .bg_slider-text {
+    display: none;
+  }
+
+  .burger__page {
+
+    display: block;
+    z-index: 29;
+  }
+
+  .slider__box {
+
+    display: none;
+  }
+}
+
+
+
 .style_block {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 
-  padding: 39px 0 150px 0;
+  padding: 39px 0 50px 0;
 }
 
 .style_box {
@@ -261,6 +438,7 @@
   align-items: end;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 100px 0 0 0;
 }
 
 
@@ -343,8 +521,6 @@
   text-align: left;
   max-width: 445px;
 
-
-
 }
 
 .stl__text {
@@ -368,9 +544,9 @@
 
 .stl__num {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
-  gap: 67px;
+  gap: 2vw;
   flex-wrap: wrap;
 }
 
@@ -379,13 +555,14 @@
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
+  width: 150px;
 }
 
 .stl__num-h h2 {
   /* Desk — H1 */
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek Book';
-  font-size: 4vw;
+  font-size: 55px;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0%;
@@ -396,7 +573,7 @@
   /* Desk — Body */
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek';
-  font-size: 1.2vw;
+  font-size: 18px;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -413,19 +590,27 @@
 
 }
 
+.stl__num-span h2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 100%;
+  color: var(--black);
+}
+
+
 .stl__num-span p {
   /* Desk — Body */
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek';
-  font-size: 1.2vw;
+  font-size: 18px;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
   text-align: left;
   margin-top: 70px;
-  max-width: 260px;
+  max-width: 20vw;
 }
-
 .slider1_wrapper {
   margin: 0;
 }
@@ -677,7 +862,7 @@ img {
   letter-spacing: 0%;
   text-align: left;
   text-decoration: none;
-  padding: 1.5vw 2.5vw;
+  padding: 1.2vw 2.5vw;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 40px;
   background: rgb(255, 255, 255);
@@ -693,6 +878,30 @@ img {
 .btn__sub:active {
   position: relative;
   top: 2px;
+}
+
+
+.form__text h3 {
+  /* Desk — H2 */
+  color: rgb(24, 24, 24);
+  font-family: '20 Kopeek Book';
+  font-size: 2.5vw;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: left;
+
+}
+
+.form__text p {
+  /* Desk — H3 */
+  color: rgb(24, 24, 24);
+  font-family: '20 Kopeek Book';
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .modal__cross-btn {
@@ -739,10 +948,10 @@ img {
 .m_form form input {
   border: 1px solid rgb(24, 24, 24);
   border-radius: 10px;
-  padding: 23px 29px;
+  padding: 1.5vw 2vw;
   color: rgb(134, 134, 134);
   font-family: '20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -753,11 +962,11 @@ img {
 .m_form button {
 
   border-radius: 40px;
-  padding: 23px 47px;
+  padding: 1.5vw 2vw;
   background: #2b59c3;
   color: rgb(255, 255, 255);
   font-family: '20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -781,7 +990,8 @@ img {
 .modal__box {
   position: relative;
   max-width: 648px;
-  height: 495px;
+  max-height: 495px;
+  height: 50vw;
   padding: 25px;
   z-index: 1;
   background-color: rgb(237, 239, 234);
@@ -826,30 +1036,36 @@ img {
   gap: 30px;
 }
 
-.form__block h3 {
+.form2__text h3 {
   /* Desk — H2 */
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek Book';
-  font-size: 38px;
+  font-size: 2.5vw;
   font-weight: 400;
-  line-height: 110%;
+  line-height: 0%;
   letter-spacing: 0%;
   text-align: left;
 
 }
 
-.form__block p {
+.form2__text p {
   /* Desk — H3 */
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek Book';
-  font-size: 26px;
+  font-size: 1.2vw;
   font-weight: 400;
-  line-height: 110%;
+  line-height: 80%;
   letter-spacing: 0%;
   text-align: left;
 }
 
-.s_form form {
+.row_form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.s_form {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -857,32 +1073,29 @@ img {
   flex-wrap: wrap;
 }
 
-.s_form form input {
+.s_form input {
 
   border: 1px solid rgb(24, 24, 24);
   border-radius: 10px;
-  padding: 23px 29px;
+  padding: 1.4vw 1.7vw;
   color: rgb(134, 134, 134);
   font-family: '20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
   text-align: left;
+  width: 22vw;
 }
-
-
-
-
 
 .form_btn {
   border-radius: 40px;
   border: none;
-  padding: 23px 47px;
+  padding: 1.5vw 2vw;
   background: rgb(43, 89, 195);
   color: rgb(255, 255, 255);
   font-family: '20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -911,7 +1124,7 @@ img {
 .prolicy p {
   color: rgb(24, 24, 24);
   font-family: ' 20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -920,7 +1133,36 @@ img {
 
 .prolicy a {
   font-family: ' 20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(43, 89, 195);
+  text-decoration: none;
+}
+
+
+.prolicy1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 11px;
+}
+
+.prolicy1 p {
+  color: rgb(24, 24, 24);
+  font-family: '20 Kopeek';
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.prolicy1 a {
+  font-family: '20 Kopeek';
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -941,7 +1183,7 @@ img {
 
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek Book';
-  font-size: 3.1vw;
+  font-size: 3.3vw;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: 0%;
@@ -964,7 +1206,7 @@ img {
 
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek Book';
-  font-size: 26px;
+  font-size: 2vw;
   font-weight: 400;
   line-height: 110%;
   letter-spacing: 0%;
@@ -1002,7 +1244,7 @@ img {
   /* Desk — Body */
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -1013,7 +1255,7 @@ img {
 .gide__text-row p {
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek';
-  font-size: 15px;
+  font-size: 1vw;
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0%;
@@ -1048,7 +1290,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: start;
-  gap: 67px;
+  gap: 2;
   flex-wrap: wrap;
 }
 
@@ -1091,25 +1333,29 @@ img {
 
 }
 
-/* .form__box {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  gap: 60px;
-  flex-wrap: wrap;
-  padding: 80px 0;
-} */
 
-.form__text h3 {
+.form3__text h3 {
   /* Desk — H2 */
   color: rgb(24, 24, 24);
   font-family: '20 Kopeek Book';
-  font-size: 38px;
+  font-size: 2.5vw;
   font-weight: 400;
   line-height: 110%;
   letter-spacing: 0%;
   text-align: left;
 
+}
+
+.form3__text p {
+  /* Desk — H3 */
+  color: rgb(24, 24, 24);
+  font-family: '20 Kopeek Book';
+  font: size 1.2vw;
+  ;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 
@@ -1132,25 +1378,25 @@ img {
 
   border: 1px solid rgb(24, 24, 24);
   border-radius: 10px;
-  padding: 23px 29px;
+  padding: 1.4vw 1.7vw;
   color: rgb(134, 134, 134);
   font-family: '20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
   text-align: left;
-  width: 420px;
+  width: 29vw;
 }
 
 .ff_form form button {
   border-radius: 40px;
   border: none;
-  padding: 23px 47px;
+  padding: 1.5vw 2vw;
   background: rgb(43, 89, 195);
   color: rgb(255, 255, 255);
   font-family: '20 Kopeek';
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -1179,8 +1425,8 @@ img {
 
 .prolicy2 p {
   color: rgb(24, 24, 24);
-  font-family: ' 20 Kopeek';
-  font-size: 18px;
+  font-family: '20 Kopeek';
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -1188,8 +1434,8 @@ img {
 }
 
 .prolicy2 a {
-  font-family: ' 20 Kopeek';
-  font-size: 18px;
+  font-family: '20 Kopeek';
+  font-size: 1.2vw;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0%;
@@ -1201,7 +1447,7 @@ img {
 .f-form__contact h3 {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 38px;
+  font-size: 2.5vw;
   line-height: 110%;
   color: var(--black);
 }
@@ -1209,7 +1455,7 @@ img {
 .f-form__contact p {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 26px;
+  font-size: 1.6vw;
   line-height: 110%;
   color: var(--black);
 }
@@ -1218,7 +1464,7 @@ img {
   text-decoration: none;
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 26px;
+  font-size: 1.6vw;
   line-height: 110%;
   color: var(--black);
 }
@@ -1227,7 +1473,7 @@ img {
   text-decoration: none;
   font-family: var(--second-family);
   font-weight: 200;
-  font-size: 16px;
+  font-size: 1vw;
   line-height: 110%;
   color: var(--blue);
 }
@@ -1244,14 +1490,45 @@ img {
 .footer__main h3 {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 38px;
+  font-size: 2.5vw;
   line-height: 110%;
   color: var(--black);
 }
 
+
+
+.footer__btn {
+  font-size: 60px;
+  font-weight: 200;
+  color: #f2f2f2;
+  display: none;
+  position: fixed;
+  bottom: 15%;
+  right: 6%;
+  height: 70px;
+  width: 70px !important;
+  background: #747394;
+  padding: 30px;
+  border-radius: 50%;
+  scroll-behavior: smooth;
+
+}
+
+.footer__btn:hover {
+  color: #181818;
+  transition: all ease-in 0.4s;
+}
+
+
+.footer__btn.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer__row {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: start;
   gap: 35px;
   flex-wrap: wrap;
@@ -1265,7 +1542,7 @@ img {
   gap: 24px;
   justify-content: start;
   border-radius: 10px;
-  width: 255px;
+  width: 225px;
   background: var(--blue);
   padding: 10px;
 }
@@ -1273,7 +1550,7 @@ img {
 .footer__box p {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.2vw;
   line-height: 140%;
   color: var(--white);
 }
@@ -1289,7 +1566,7 @@ img {
 .footer__copyright p {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.2vw;
   line-height: 140%;
   color: var(--black);
   padding: 30px 0 0;

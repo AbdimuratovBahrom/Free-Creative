@@ -1,0 +1,9 @@
+.text1 {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 50px;
+  width: auto;
+  height:auto;
+  background-color: blue;
+  display:none;
+  padding: 5px 0 5px 10px;
+}

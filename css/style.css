@@ -120,12 +120,20 @@ html {
 
 }
 
+.burger__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 .burger__top {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 80px;
+  margin-top: 80px;
+
 }
 
 .burger__list {
@@ -183,7 +191,7 @@ html {
 
   position: fixed;
   display: none;
-  padding: 20px 40px;
+  padding: 20px 15px 20px 40px;
   width: 100%;
   z-index: 1;
   background: #e5e5e5;
@@ -205,11 +213,11 @@ html {
 
 .burger__btn {
   position: relative;
-  top: 10px;
+  top: 13px;
   border-radius: 50%;
   background: #868686;
   padding: 3px;
-  overflow: hidden;
+
 
 }
 
@@ -220,14 +228,12 @@ html {
 
 
 
-
 .burger__btn1 {
-  bottom: 5px;
-  left: 586px;
-  position: relative;
+
   border-radius: 50%;
   background: #868686;
   padding: 3px;
+
 }
 
 .burger__btn1:hover {

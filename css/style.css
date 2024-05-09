@@ -150,6 +150,7 @@ html {
 }
 
 
+
 .burger__social {
   display: flex;
   justify-content: start;
@@ -180,12 +181,13 @@ html {
 
 .burger__menu {
 
-
+  position: fixed;
   display: none;
   padding: 20px 40px;
   width: 100%;
-
+  z-index: 1;
   background: #e5e5e5;
+  opacity: 0.85;
 
 }
 
@@ -205,9 +207,10 @@ html {
   position: relative;
   top: 10px;
   border-radius: 50%;
-  background: transparent;
+  background: #868686;
   padding: 3px;
-  border: solid 2px #868686;
+  overflow: hidden;
+
 }
 
 .burger__btn:hover {
@@ -219,13 +222,11 @@ html {
 
 
 .burger__btn1 {
-
-
+  bottom: 5px;
+  left: 586px;
   position: relative;
-  top: 16px;
-  right: 600px;
   border-radius: 50%;
-  background: transparent;
+  background: #868686;
   padding: 3px;
 }
 
@@ -420,6 +421,7 @@ html {
 
     display: none;
   }
+
 }
 
 
@@ -611,6 +613,7 @@ html {
   margin-top: 70px;
   max-width: 20vw;
 }
+
 .slider1_wrapper {
   margin: 0;
 }
